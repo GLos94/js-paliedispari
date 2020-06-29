@@ -24,17 +24,21 @@ console.log(somma);
 
 
 // creiamo la funzione
-function isEven(somma) {
-  if (somma%2==0) {
+function isEven(num) {
+  if (num%2==0) {
     return true;
   } else {
     return false;
   }
 }
 
+console.log(isEven(somma));
+
 // dichiarare chi ha vinto
-if (somma == paDis) {
-  console.log("Hai vinto!");
+if ((isEven(somma)) == true && paDis == "pari") {
+ console.log("Hai vinto!");
+} else if ((isEven(somma)) == false && paDis == "dispari") {
+ console.log("Hai vinto!");
 } else {
-  console.log("Ha vinto la CPU!");
+  console.log("Ha vinto la cpu");
 }
