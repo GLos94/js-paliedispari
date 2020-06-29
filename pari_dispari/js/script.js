@@ -21,7 +21,7 @@ console.log(somma);
 //   console.log("la somma è un numero dispari");
 // }
 
-var somma;
+
 
 // creiamo la funzione
 function isEven(somma) {
@@ -31,7 +31,6 @@ function isEven(somma) {
     return false;
   }
 }
-
 
 // dichiarare chi ha vinto
 if (somma == paDis) {

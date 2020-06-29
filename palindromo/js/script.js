@@ -22,18 +22,24 @@
 
 
 var parola = prompt("Inserisci una parola");
-var parolaInversa;
+var parolaInversa = "";
 
 
-if (parola == parolaInversa) {
-  console.log("La parola inserita è palindroma");
-} else {
-  console.log("La parola inserita NON è palindroma");
-}
 
-function checkPalindrom(parola, caratteriParola, caratteriParolaInversa, parolaInversa) { //function that checks if palindrome or not
+
+function checkPalindrom(parola, caratteriParola, caratteriParolaInversa, parolaInversa) {
     caratteriParola = parola.split("");
     caratteriParolaInversa = caratteriParola.reverse("");
     parolaInversa = caratteriParolaInversa.join("");
+
     return parolaInversa;
+
 }
+
+console.log(checkPalindrom(parolaInversa));
+
+  if (checkPalindrom == true) {
+   console.log("la parola è palindroma");
+ } else {
+   console.log("la parola non è palindroma");
+ }
