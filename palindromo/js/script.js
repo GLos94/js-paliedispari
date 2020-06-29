@@ -21,25 +21,46 @@
 // }
 
 
+
+
+
+// versione for
+
+
 var parola = prompt("Inserisci una parola");
 var parolaInversa = "";
 
-
-
-
-function checkPalindrom(parola, caratteriParola, caratteriParolaInversa, parolaInversa) {
-    caratteriParola = parola.split("");
-    caratteriParolaInversa = caratteriParola.reverse("");
-    parolaInversa = caratteriParolaInversa.join("");
-
-    return parolaInversa;
-
+if ((palindromo(parola)) == parola) {
+  console.log("la parola è palindroma");
+} else {
+  console.log("la parola non è palindroma");
 }
 
-console.log(checkPalindrom(parolaInversa));
 
-  if (checkPalindrom == true) {
-   console.log("la parola è palindroma");
- } else {
-   console.log("la parola non è palindroma");
- }
+function palindromo(word) {
+  for (var i = word.length - 1; i >= 0 ; i--) {
+    parolaInversa += word[i] ;
+  }
+  return parolaInversa;
+}
+
+
+
+// versione split.reverse.join
+
+// function checkPalindrom(parola) {
+//     var caratteriParola = parola.split("");
+//     var caratteriParolaInversa = caratteriParola.reverse("");
+//     var parolaInversa = caratteriParolaInversa.join("");
+//
+//     return parolaInversa;
+//
+// }
+//
+// console.log(checkPalindrom(parolaInversa));
+//
+//   if (checkPalindrom(parola) == parola) {
+//    console.log("la parola è palindroma");
+//  } else {
+//    console.log("la parola non è palindroma");
+//  }
